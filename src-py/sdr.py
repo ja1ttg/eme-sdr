@@ -4,9 +4,12 @@ import matplotlib.animation as anm
 import itertools
 
 def _update(frame):
-    data = [float(input()) for i in range(1960)]
+    line = input()
+    print("==INPUT ==")
+    str_data = line.split(",")
+    data = list(map(float, str_data))
     plt.cla()
-    plt.plot(data)   
+    plt.plot(data[0:100])   
 
 params = {
     'fig': plt.figure(figsize=(6, 3)),

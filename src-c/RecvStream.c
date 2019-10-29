@@ -48,7 +48,7 @@
 
 #define SAMPLE_RATE  192000  /* Max rate for UR12 */
 #define FRAMES_PER_BUFFER (512*4)
-#define NUM_SPLIT     (1)
+#define NUM_SPLIT     (10)
 
 /* Select sample format. */
 #if 0
@@ -237,8 +237,9 @@ int main(void)
 			for (i = 0, len = 0; i < data.maxIndex; i++) {
 				//len += sprintf(&buff[len], PRINTF_S_FORMAT "\n", data.recorded_r[i]);
 				len += strlen(itoa(data.recorded_r[i], &buff[len], 10));
-				buff[len++] = '\n';
+				buff[len++] = ',';
 			}
+			buff[len-1] = '\n';
 			fwrite(buff, 1, len, stdout);
 			data.finished = FALSE;
 		}

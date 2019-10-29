@@ -91,7 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;;PA_USE_ASIO=1;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\..\portaudio\include;..\..\portaudio\src\common;..\..\portaudio\src\os\win;..\..\asiosdk2\common;..\..\asiosdk2\host;..\..\asiosdk2\host\pc;D:\Home\PrivateProject\EME\Asio\ASIOSDK2\common</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\portaudio\include;..\..\portaudio\src\common;..\..\portaudio\src\os\win;..\..\asiosdk2\common;..\..\asiosdk2\host;..\..\asiosdk2\host\pc</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
